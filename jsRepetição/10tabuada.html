@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+        var b = parseInt(prompt("Insira até que número você gostaria de fazer a tabuada")), a = 1;
+
+        while (a <= b){
+            c = 1;
+            document.write("Essa é a tabuada do " + a + "<br>");
+            for (c = 1; c <= 10; c++){
+                multi = a * c;
+                document.write(a + " x " + c + " = " + multi + "<br>");
+            }
+            a++;
+            document.write("<br>");
+        } 
+
+           /* for(a = 1; a <= b; a++){
+            c = 1;
+            document.write("Essa é a tabuada do " + a + "<br>");
+            for (c = 1; c <= 10; c++){
+                multi = a * c;
+                document.write(a + " x " + c + " = " + multi + "<br>");
+            }
+            document.write("<br>");
+        } 
+        
+            As duas versões acima são minhas.
+        */
+
+        /* 
+            Esta é a versão do professor:
+        
+        
+            var j = 1;
+            var n = prompt("numero do usuario");
+        
+            while (j < n) {
+                document.write("<br>Tabuada " + j + "<br>");
+                var i = 0;
+
+                while (i <= 10) {
+                    multiplicacao = j * i;
+                    document.write(j + " x " + i + "= " + multiplicacao + "<br>")
+                    i++;
+                }
+
+                j++;
+            } */
+
+        
+
+
+
+
+
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

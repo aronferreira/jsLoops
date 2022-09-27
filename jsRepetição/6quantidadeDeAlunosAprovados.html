@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        var opt = prompt("Gostaria de calcular a média de um aluno?"), qnt = 0;
+        
+        while (opt == "s" || opt == "S"){
+            var nota = parseInt(prompt("Insira aqui a primeira nota.")), nota2 = parseInt(prompt("Insira aqui a segunda nota.")), media = (nota + nota2) / 2;
+            window.alert("A média é: " + media);
+            if (media >= 9.5){
+                qnt += 1;
+            }
+            opt = prompt("Gostaria de calcular a média de um aluno novamente?");
+        }
+        
+        window.alert("A quantidade de alunos aprovados foi: " + qnt)
+
+        </script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

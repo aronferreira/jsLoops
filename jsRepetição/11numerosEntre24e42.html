@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="funcao()">
+
+    <div>
+        <button type="button" id="rodarCodigo">Executar novamente.</button>
+    </div>
+
+    <script>
+        document.getElementById("rodarCodigo").onclick = funcao;
+
+        function funcao() {
+        var nTotal = 0, numFora = 0, rept = 1;
+            do { 
+                var n1 = parseInt(prompt("Informe um valor."));
+                if (n1 >= 24 && n1 <= 42 ){
+                    nTotal++;
+                } else if (n1 < 24 || n1 > 42){
+                    numFora++;
+                }
+                rept++;
+            } while (rept <= 10);
+        
+        alert("O total de números entre 24 e 42 foram: " + nTotal + " E o total de números fora desse intervalo foi: " + numFora);
+    }
+
+    /* Eu quis experimentar com código e lógica dessa vez, então talvez não tenha ficado da forma mais rápida ou prática mas eu queria testar
+    meu conhecimento */
+    </script>
+    
+</body>
+</html>
